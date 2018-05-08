@@ -19,7 +19,6 @@ $.ajax({
 
             $.ajax({
                 url: resultados[i].url,
-                crossDomain: true,
                 success: function (pokemon) {
 
                     elementoColunaUm.html(pokemonCard(pokemon))

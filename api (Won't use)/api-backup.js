@@ -9,7 +9,6 @@ $.ajax({
         for (var i = 0; i < resultados.length; i++) {
             $.ajax({
                 url: resultados[i].url,
-                crossDomain: true,
                 success: function (pokemon) {
                     $('#lista-cards').append(`
                         <div class="card" style="width: 18rem;">
